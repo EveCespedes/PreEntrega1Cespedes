@@ -1,6 +1,6 @@
 function envioDomicilio () {
     let direccion = prompt ("Te podemos enviar los escabiosos a tu domicilio !! Ingresa tu direccion :");
-    alert ( "Vamos a enviar tu producto a" + direccion +  "dentro del rango horario de 14 pm a 20 pm");
+    alert ( ("Vamos a enviar tu producto a")+ direccion + ("dentro del rango horario de 14 pm a 20 pm"));
 }
 
 
@@ -73,6 +73,7 @@ if (cuantoDineroTienes == "") {
 
     }
     
+    
 } else if (cuantoDineroTienes >= plataMaxima) {
     alert("Te alcanza para escabiosos gama alta");
     console.log("Te alzanza para escabiosos gama alta")
@@ -100,13 +101,14 @@ if (cuantoDineroTienes == "") {
             break
 
     }
-    
+     
 }
 }
 
-
+if (edadDelUsuario >= edadMayoritaria ) {
 
 envioDomicilio ()
 
 alert("Gracias por tu compra");
-console.log("Gracias por elegirnos")
+console.log("Gracias por elegirnos");
+}
