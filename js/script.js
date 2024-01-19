@@ -1,3 +1,7 @@
+function envioDomicilio () {
+    let direccion = prompt ("Te podemos enviar los escabiosos a tu domicilio !! Ingresa tu direccion :");
+    alert ( "Vamos a enviar tu producto a" + direccion +  "dentro del rango horario de 14 pm a 20 pm");
+}
 
 
 
@@ -68,10 +72,10 @@ if (cuantoDineroTienes == "") {
             break
 
     }
-    alert("Gracias por tu compra")
-} else if (cuantoDineroTienes <= plataMaxima) {
+    
+} else if (cuantoDineroTienes >= plataMaxima) {
     alert("Te alcanza para escabiosos gama alta");
-    console.log("te alzanza la gama alta")
+    console.log("Te alzanza para escabiosos gama alta")
 
 
     let opcionDos = prompt("Eleja una opcion: n\ 1-Whisky n\ 2-Ron n\ 3-vinos n\ 4-Absolut n\ 5-Chandon ");
@@ -96,6 +100,13 @@ if (cuantoDineroTienes == "") {
             break
 
     }
-    alert("Gracias por tu compra");
+    
 }
 }
+
+
+
+envioDomicilio ()
+
+alert("Gracias por tu compra");
+console.log("Gracias por elegirnos")
